@@ -33,7 +33,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: . # Update this to include the target directory: ./target
         push: true
         tags: zife10/demo-app:latest
         distribution: 'registry.hub.docker.com'
