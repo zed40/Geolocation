@@ -23,6 +23,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+    - name: Set DOCKER_BUILDKIT to 0
+      run:  export DOCKER_BUILDKIT=0
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: print build context contents
