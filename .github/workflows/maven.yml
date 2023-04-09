@@ -35,3 +35,4 @@ jobs:
         context: .
         push: true
         tags: zife10/demo-app:latest
+        distribution: 'registry.hub.docker.com'
